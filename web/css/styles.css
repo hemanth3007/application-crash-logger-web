@@ -125,11 +125,7 @@ body {
   gap: 1.25rem;
 }
 
-@media (max-width: 768px) {
-  .input-group {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 .form-control {
   position: relative;
@@ -405,5 +401,69 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px), (max-height: 750px) {
+  body {
+    overflow-y: auto;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 1.25rem;
+  }
+
+  .input-group {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.75rem 0.5rem;
+  }
+
+  .terminal-output {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1rem 0.5rem;
+  }
+
+  .app-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.75rem;
+  }
+
+  .logo-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .terminal-output {
+    height: 180px;
   }
 }
