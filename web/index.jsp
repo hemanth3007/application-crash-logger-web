@@ -13,8 +13,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="web/css/styles.css" />
-    <script src="web/js/script.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
   </head>
 
   <body>
